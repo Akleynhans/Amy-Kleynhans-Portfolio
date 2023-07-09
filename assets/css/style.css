@@ -1,0 +1,142 @@
+/* universal selector */
+* {
+    margin:0;
+    padding: 0;
+    font-family: Andale Mono, monospace;
+}
+
+:root {
+    --header-color: #eee2dc;
+    
+}
+
+/* element selectors */
+header {
+    position: fixed;
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    background-color: var(--header-color);
+
+}
+ 
+
+h1 {
+    font-size: 100px;
+    font-family: Impact, fantasy;
+    letter-spacing: 7px;
+    
+}
+
+h2 {
+    font-size: 50px;
+    padding: 20px;
+}
+
+main img {
+    transform: scale(.4);
+    position: relative;
+}
+
+li {
+    display: inline;
+    padding: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #41b3a3;
+    font-size: 20px;
+}
+
+section {
+    background-color: #41b3a3;
+}
+
+p{
+    color: #eee2dc;
+}
+
+div {
+    display: flex;
+    align-items: center;
+}
+
+span {
+    background-color: #c38d9e;
+    font-size: 25px;
+    padding: 5px;
+}
+
+/* class selectors */
+.text-center {
+     text-align: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--header-color);
+    height: 800px;
+}
+
+.name-center {
+    position: absolute;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.logo {
+    width: 50px;
+}
+
+.my-work-list {
+    display:flex;
+    flex-direction: column;
+}
+
+.my-work-list li {
+    padding: 50px 0;
+    margin: 5px 0;
+    border-top:solid #eee2dc;
+    border-bottom: solid #eee2dc;
+    background-color: #c38d9e;
+    display: flex;
+    align-items: center;
+}
+
+.my-work-list li:hover {
+
+ transform: scale(1.1);
+}
+
+/* id selectors */
+#avatar {
+    width: 150px;
+    margin: 15px;
+    padding: 0px;
+    border-radius: 50%;
+    border: solid #eee2dc; 
+   
+}
+
+#project-item {
+    margin: 40x;
+    padding: 15px;
+    color: #eee2dc;
+    display: block;
+    position:absolute;
+    width: 100%;
+    height: 110px;
+    
+}
+
