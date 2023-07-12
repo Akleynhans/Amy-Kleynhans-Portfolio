@@ -18,7 +18,7 @@ The webpage opens with my name and logo. There is a nav bar at the top you can u
 ![Amy Portfolio 'My Work' seciont](./main/assets/images/screenshot2.JPG)
 My completed work is linked in this section, click the image to deploy the completed project.
 
-![Amy Portfolio 'contact me' section](./main/assets/images/screenshot3.jpg)
+![Amy Portfolio 'contact me' section](./main/assets/images/screenshot3.JPG)
 Click the logos at the bottom of the page to deploy my contact information for the corresponding logo
 
 ## Credits
