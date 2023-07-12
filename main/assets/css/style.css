@@ -35,7 +35,6 @@ h2 {
 
 main img {
     transform: scale(.4);
-    position: relative;
 }
 
 li {
@@ -54,7 +53,7 @@ section {
 }
 
 p{
-    color: #eee2dc;
+    color: var(--header-color);
 }
 
 div {
@@ -66,6 +65,14 @@ span {
     background-color: #c38d9e;
     font-size: 25px;
     padding: 5px;
+}
+
+footer {
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    background-color: var(--header-color);
+
 }
 
 /* class selectors */
@@ -97,6 +104,7 @@ span {
 
 .logo {
     width: 50px;
+    margin: 20px;
 }
 
 .my-work-list {
@@ -107,16 +115,16 @@ span {
 .my-work-list li {
     padding: 50px 0;
     margin: 5px 0;
-    border-top:solid #eee2dc;
-    border-bottom: solid #eee2dc;
+    border-top:solid var(--header-color);
+    border-bottom: solid var(--header-color);
     background-color: #c38d9e;
     display: flex;
     align-items: center;
 }
 
 .my-work-list li:hover {
-
- transform: scale(1.1);
+    
+    transform: scale(1.1);
 }
 
 /* id selectors */
@@ -125,14 +133,15 @@ span {
     margin: 15px;
     padding: 0px;
     border-radius: 50%;
-    border: solid #eee2dc; 
-   
+    border: solid var(--header-color); 
+    
 }
 
+/* set size of clickable area*/
 #project-item {
-    margin: 40x;
+    margin: 40px;
     padding: 15px;
-    color: #eee2dc;
+    color: var(--header-color);
     display: block;
     position:absolute;
     width: 100%;
@@ -140,3 +149,35 @@ span {
     
 }
 
+/* Make first work item bigger than the rest */
+#main-item {
+    padding: 100px 0;
+    margin: 5px 0;
+    border-top:solid var(--header-color);
+    border-bottom: solid var(--header-color);
+    background-color: #c38d9e;
+    display: flex;
+    align-items: center;
+}
+/* set size of clickable area*/
+#project-item1 {
+    margin: 40px;
+    padding: 15px;
+    color: var(--header-color);
+    display: block;
+    position:absolute;
+    width: 100%;
+    height: 220px;
+    
+}
+
+/* media queires for shrinking screen size */
+@media screen and (max-width: 720px) {
+   .text-right {
+    text-align: center;
+   }
+
+   .name-center {
+    transform: scale(.75);
+   }
+}
